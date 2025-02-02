@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="I Ching Divination Simulator Web App">
+  <title>I Ching Divination Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>I Ching Divination Simulator</h1>
+    <div class="description">
+      <p>Click the button to throw coins and generate a hexagram.</p>
+      <p>The I Ching uses 6 lines, each representing a combination of solid (——) and broken (-- --) lines.</p>
+    </div>
+    <button id="throw-coins" aria-label="Throw Coins to Generate Hexagram">Throw Coins</button>
+    <div class="hexagram-container">
+      <div id="hexagram" aria-live="polite"></div>
+    </div>
+    <div id="interpretation" aria-live="polite"></div>
+    <div id="changing-lines" aria-live="polite"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
